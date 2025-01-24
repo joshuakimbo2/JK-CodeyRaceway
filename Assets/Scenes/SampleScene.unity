@@ -2872,7 +2872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1c8dceda4e8f06348a93e677041a4c1e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 42.535027
+      value: 43.31
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1c8dceda4e8f06348a93e677041a4c1e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4069,7 +4069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd4943d3cd4d51d4598679f546348626, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.2
+      value: 22.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cd4943d3cd4d51d4598679f546348626, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4599,15 +4599,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1c8dceda4e8f06348a93e677041a4c1e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -330.83313
+      value: -330.83316
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1c8dceda4e8f06348a93e677041a4c1e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 43.21292
+      value: 43.11
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1c8dceda4e8f06348a93e677041a4c1e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -34.36136
+      value: -34.23
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1c8dceda4e8f06348a93e677041a4c1e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6557,7 +6557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3149b76bf3e4b8d98c2e9e1c53e668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 15
+  Speed: 30
   running: 0
   canMove: 1
   move: {x: 0, y: 0, z: 0}
@@ -6594,8 +6594,8 @@ Rigidbody:
   m_GameObject: {fileID: 1994091481}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 1
+  m_AngularDrag: 1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
