@@ -9,7 +9,15 @@ public class FinishLineTrigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            print("You Win!");
+            if (checkpointTracker.triggerCheckpoints == checkpointTracker.numberOfCheckpoints)
+            {
+                print("You Win!");
+            }
+
+            else
+            {
+                print("Cheater");
+            }
         }
     }
 }

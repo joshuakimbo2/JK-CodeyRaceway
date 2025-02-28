@@ -329,6 +329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: turnTrackWCollider
       objectReference: {fileID: 0}
+    - target: {fileID: 2243004662973641546, guid: 0bc846f598e40404697952cc517e2227, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
