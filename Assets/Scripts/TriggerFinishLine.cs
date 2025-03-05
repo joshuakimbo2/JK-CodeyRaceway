@@ -13,7 +13,6 @@ public class FinishLineTrigger : MonoBehaviour
             {
                 print("You Win!");
             }
-
             else
             {
                 print("Cheater");
