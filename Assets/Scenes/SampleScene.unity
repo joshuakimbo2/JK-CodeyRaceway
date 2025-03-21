@@ -4017,9 +4017,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lapTime: {fileID: 1019897367}
-  startCountdown: {fileID: 0}
-  totalLapTime: 0
-  totalCountdownTime: 0
+  startCountdown: {fileID: 127159207}
+  totalLapTime: 70
+  totalCountdownTime: 3
 --- !u!1001 &1908137353
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,16 +10,15 @@ public class TimersCountdown : MonoBehaviour
 
     public float totalLapTime;
     public float totalCountdownTime;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()
     {
         totalLapTime -= Time.deltaTime;
         totalCountdownTime -= Time.deltaTime;
+
+        lapTime.text = totalLapTime.ToString();
+        startCountdown.text = totalCountdownTime.ToString();
     }
 }
