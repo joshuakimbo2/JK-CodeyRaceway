@@ -23,26 +23,29 @@ public class TimersCountdown : MonoBehaviour
 
         lapTime.text = Mathf.Round(totalLapTime).ToString();
         startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
+        
+        ///COUNTDOWN TIME START
         if (totalCountdownTime > 0) 
-        { 
-        totalCountdownTime -= Time.deltaTime;
-        startCountdown.text = totalCountdownTime.ToString();
-            cm.Speed = 0;
+        {
+            
+            totalCountdownTime -= Time.deltaTime;
+            startCountdown.text = Mathf.Round(totalCountdownTime).ToString();
+            
         }
 
+        //COUNTDOWN TIME ENDS
         if (totalCountdownTime <= 0)
         {
             startCountdown.text = "";
             totalLapTime -= Time.deltaTime;
             lapTime.text = totalLapTime.ToString();
-            cm.Speed = 60;
+            cm.canMove = true;
         }
+
+        ///LAP TIME
         if(totalLapTime <= 0)
         {
             print("Time is up!");
         }
-
-            
     }
-    
 }
