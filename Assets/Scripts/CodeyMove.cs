@@ -45,4 +45,13 @@ public class CodeyMove : MonoBehaviour
         }
         
     }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if(collision.gameObject.tag == "PowerUp")
+        {
+            Debug.Log("hi");
+            Destroy(collision.gameObject);
+        }
+    }
 }
