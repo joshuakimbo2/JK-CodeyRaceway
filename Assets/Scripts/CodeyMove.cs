@@ -29,19 +29,8 @@ public class CodeyMove : MonoBehaviour
 
             rb.AddForce(move, ForceMode.VelocityChange);
 
-            if (move.magnitude > 2f)
-            {
-                anim.SetBool("isRunning", true);
-            }
-            else if(move.magnitude > 1f)
-            {
-                anim.SetBool("isWalking", true);
-            }
-            else
-            {
-                anim.SetBool("isWalking", false);
-                anim.SetBool("isRunning", false);
-            }
+            
+            anim.SetFloat("speed", move.magnitude);
         }
         
     }
@@ -50,7 +39,6 @@ public class CodeyMove : MonoBehaviour
     {
         if(collision.gameObject.tag == "PowerUp")
         {
-            Debug.Log("hi");
             Destroy(collision.gameObject);
         }
     }

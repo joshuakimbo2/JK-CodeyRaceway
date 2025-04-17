@@ -37,7 +37,7 @@ public class TimersCountdown : MonoBehaviour
         if (totalCountdownTime <= 0)
         {
             startCountdown.text = "";
-            totalLapTime -= Time.deltaTime;
+            totalLapTime -= Time.deltaTime * 0.25f;
             lapTime.text = totalLapTime.ToString();
             cm.canMove = true;
         }
