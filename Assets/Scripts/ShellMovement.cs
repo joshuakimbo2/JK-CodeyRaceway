@@ -7,7 +7,7 @@ public class ShellMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -15,4 +15,13 @@ public class ShellMovement : MonoBehaviour
     {
         transform.position += transform.forward * Time.deltaTime * 50;
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+    }
 }
+

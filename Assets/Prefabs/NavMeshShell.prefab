@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: -2609809028551464901, guid: 8252c0f0554528d4893344dfdc762537, type: 3}
     - target: {fileID: 5640047035483776623, guid: 025b67b5781896445b38df59d180a9d1, type: 3}
       propertyPath: m_Name
-      value: Sphere (1) Variant
+      value: NavMeshShell
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
