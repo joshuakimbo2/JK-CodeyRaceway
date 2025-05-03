@@ -10,6 +10,7 @@ public class CodeyMove : MonoBehaviour
     public Vector3 move;
     public float _rotationSpeed = 50f;
     private Rigidbody rb;
+    private float multiplier = 1f;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -23,7 +24,7 @@ public class CodeyMove : MonoBehaviour
             float vertical = Input.GetAxis("Vertical");
             float horizontal = Input.GetAxis("Horizontal");            
             Vector3 rotation = new Vector3(0, horizontal * _rotationSpeed * Time.deltaTime, 0);
-            move = transform.forward * Speed * Time.deltaTime * vertical;
+            move = transform.forward * Speed * Time.deltaTime * vertical * multiplier;
             move.y = 0f;
             transform.Rotate(rotation);
 
@@ -33,5 +34,16 @@ public class CodeyMove : MonoBehaviour
             anim.SetFloat("speed", move.magnitude);
         }
         
+    }
+
+    public void SetSpeedMultiplier()
+    {
+        multiplier = 2;
+        Invoke("ResetMulitplier", 10);
+        
+    }
+    private void ResetMultiplier()
+    {
+        multiplier = 1;
     }
 }
