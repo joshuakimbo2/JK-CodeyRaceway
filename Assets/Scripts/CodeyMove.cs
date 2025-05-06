@@ -40,8 +40,8 @@ public class CodeyMove : MonoBehaviour
     {
         multiplier = 2;
         Invoke("ResetMulitplier", 10);
-        
     }
+
     private void ResetMultiplier()
     {
         multiplier = 1;
