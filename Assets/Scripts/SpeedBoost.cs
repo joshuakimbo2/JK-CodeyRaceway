@@ -20,7 +20,7 @@ public class SpeedBoost : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        other.GetComponent<CodeyMove>().SetSpeedMultiplier();
+        other.GetComponent<CodeyMove>().SetSpeedMultiplier(SpeedMultiplier, Duration);
         Destroy(gameObject);
 
     }

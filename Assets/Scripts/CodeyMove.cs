@@ -36,10 +36,10 @@ public class CodeyMove : MonoBehaviour
         
     }
 
-    public void SetSpeedMultiplier()
+    public void SetSpeedMultiplier(float mult, float dur)
     {
-        multiplier = 2;
-        Invoke("ResetMulitplier", 10);
+        multiplier = mult;
+        Invoke("ResetMultiplier", dur);
     }
 
     private void ResetMultiplier()
