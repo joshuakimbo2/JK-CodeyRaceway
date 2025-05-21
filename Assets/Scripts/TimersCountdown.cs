@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimersCountdown : MonoBehaviour
 {
@@ -46,6 +47,7 @@ public class TimersCountdown : MonoBehaviour
         if(totalLapTime <= 0)
         {
             print("Time is up!");
+            SceneManager.LoadScene(1);
         }
     }
 }
