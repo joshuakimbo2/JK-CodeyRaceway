@@ -6855,7 +6855,7 @@ MonoBehaviour:
   lapTime: {fileID: 1019897367}
   cm: {fileID: 1994091484}
   startCountdown: {fileID: 1019897367}
-  totalLapTime: 10
+  totalLapTime: 202
   totalCountdownTime: 3
 --- !u!1001 &1791647947
 PrefabInstance:
